@@ -11,7 +11,9 @@ body
 #container {
     width: 100%;
     height: 100vh;
+    /* margin: 50px auto; */
     /* background-color: #D9DCCD; */
+    
 }
 .card
 {
@@ -77,12 +79,88 @@ body
 
 .card .first_card
 {
-    width: 400px;
-    height: 380px;
+    width: 380px;
+    height: 360px;
     border-radius: 20px;
     border: 2px black solid;
     background: #F5F6F1;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sort
+{
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+}
+
+.sort input
+{
+    width: 40%;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+    margin: 2px;
+    transition: 0.2s;
+} 
+
+.sort input:hover
+{
+    background-color: rgb(94, 94, 94);
+    color: rgb(255, 255, 255);
+}
+
+.sort button
+{
+    margin: 2px;
+    width: 20%;
+    height: 35px;
+    font-size: 18px;
+    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #F5F6F1;
+    color: black;
+    transition: 0.2s;
+}
+
+.sort button:hover
+{
+    background-color: black;
+    color: #fff;
+}
+
+
+@media screen and (max-width:430px)
+{
+    .translate
+    {
+        font-size: 40px;
+    }
+    .card .first_card
+    {
+        width: 290px;
+        height: 270px;
+    }
+    .card
+    {
+        max-width: 300px;
+    }
+    
+    #output
+    {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width:351px){
+    .card
+    {
+        max-width: 300px;
+        margin-left: 20px;
+        margin-right: 15px;
+    }
 }
